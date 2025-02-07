@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title> Projects | Home </title>
+        <script src="calculate.js"></script>
     </head>
     <body>
         <header></header>
@@ -20,20 +21,24 @@
             </ul>
         </nav>
         <main>
-            <h3></h3>
-           <div id="main-projects">
-                <div id="">
-                    <img id="" src=" alt="">
-                </div>
-                <div id="main-projects-text">
-                    <p>
+            <div id="calc-wrapper">
+                <h1>Mia's Purty Calc</h1>
+            </header>
+                <label for="input">First Number:<input id="first num input">
+                <label for="input">Second Number:<input id="second num input">
+
+                    <button onclick="addition()">+</button>
+                    <button onclick="sub()">-</button>
+                    <button onclick="mult()">*</button>
+                    <button onclick="division()">/</button>
+                    <button onclick="power()">**</button>
+                    <button onclick="clear()">Clear</button>
+
+                    <div id="ans">
+                        <p id="answer"></p>
                         
-                    </p>
-                </div>
+                    </div>
             </div>
-            <p>
-                
-            </p>
         </main>
         <footer>
             <p>All rights reserved by Mia Jolie Batista: <a href="">Credits</a>&#169;</p>
