@@ -90,34 +90,47 @@ main{
     padding: 2vh 2vw;
 }
 
-#main-education{
-    text-align: center;   
-}
-
-#Courses{
-    font-size: calc(1.5px + 1.5vw);
-}
-
-
-#UCI,#BU{
-    /* background: #ffffff; */
-    width: 40%;
-    margin: 1vh 1vw;
-}
-
 #main-title{
     margin: 2vw 0;
     text-align: center;
     font-size: calc(2px + 2vw);
     color: #ff8c94;
 }
-/*Two column container ends*/
 
-.two-columns {
-    column-count: 2;     
-    column-gap: 20px;   
-    font-size: calc(1.25px + 1.25vw);
+#main-skills {
+    display: flex;
+    flex-direction: column; /* Stack GIF, then the 4 boxes below */
+    align-items: center;   
+    margin: 2vw auto;     
 }
+
+#peter{
+
+    width: 80%;      
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2vh auto;
+    display: block;        
+}
+
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5%;                  
+    width: 80%;                           
+    max-width: 800vw;                      
+}
+
+.box {
+    background-color: #ffd3b5; /* Light background color */
+    border: 2px solid #ffaaa6;
+    border-radius: 4vw;
+    padding: 15%;
+    text-align: center;
+    font-size: calc(1px + 1vw);
+  }
+
+
 
 footer{
     background-color: #ffd3b5;
@@ -192,19 +205,34 @@ footer a{
         justify-content: center;
     }
 
-    #Courses{
-        font-size: calc(3px + 3vw);
-    }
+    #peter{
 
-    .two-columns{
-        column-count: 1;
-        
-        font-size: calc(2.5px + 2.5vw);
+        width: 90%;      
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 2vh auto;
+        display: block;        
     }
-
 
     #main-title{
         text-align: center;
         color: #ff8c94;
+    }
+
+    .skill-categories {
+        grid-template-columns: 1fr; 
+        width: 95%;
+        overflow: hidden;
+      }
+
+    .box {
+        background-color: #ffd3b5; /* Light background color */
+        border: 2px solid #ffaaa6;
+        border-radius: 4vw;
+        padding: 5.5%;
+        text-align: center; 
+        width: 100%;
+        overflow: hidden;
+        font-size: calc(2px + 2vw);
     }
 }
