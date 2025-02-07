@@ -16,7 +16,6 @@ function addition(){
     }
 
 }
-   
 
 function sub(){
     const firstIN = document.getElementById("first num input").value;
@@ -100,6 +99,9 @@ function power(){
 }
 
 function clear(){
+    document.getElementById("first num input").value= "";
+    document.getElementById("second num input").value= "";
+    
     document.getElementById("").innerHTML="";
 }
 
