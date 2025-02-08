@@ -46,6 +46,7 @@ header{
 
 nav{
     width: 30%;
+
 }
 
 nav ul{
@@ -68,7 +69,6 @@ nav li{
     border-radius: 10px;
     padding: 2vh 0;
     margin: 5vh auto;
-    
 }
 
 nav a{
@@ -86,7 +86,6 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
-    
     padding: 2vh 2vw;
 }
 
@@ -97,38 +96,40 @@ main{
     color: #ff8c94;
 }
 
-#main-skills {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    margin: 2vw auto;     
+#playing, #climbing, #studioPic{
+    max-width: 100%;
+    border: 4px solid #b6cdbd;
+    align-items: center;
+}
+#Soccer, #Rock-Climbing{
+    width: 40%;
+    margin: auto;
 }
 
-#peter{
-
-    width: 80%;      
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 2vh auto;
-    display: block;        
+#Portfolio{
+    width: auto;
+    margin: 1vh 1vw;
+    margin: 2vh auto; 
+    display:flex;
+}
+#Portfolio img{
+    max-width: 100%;
+    align-items: center;
+    border: 4px solid #b6cdbd;
 }
 
-.skill-categories {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 1.5%;                  
-    width: 80%;                           
-    max-width: 800vw;                      
+#a, #b, #e, #f, #g, #h, #i{
+    border: 4px solid #b6cdbd;
+    overflow:hidden;
+    flex:33.33%;
+    display:block;
 }
 
-.box {
-    background-color: #ffd3b5;
-    border: 2px solid #ffaaa6;
-    border-radius: 4vw;
-    padding: 15%;
+.hob-text{
     text-align: center;
-    font-size: calc(1px + 1vw);
-  }
+}
+
+
 
 
 
@@ -205,34 +206,11 @@ footer a{
         justify-content: center;
     }
 
-    #peter{
-
-        width: 90%;      
-        height: auto;
-        margin: 0 auto;
-        margin-bottom: 2vh auto;
-        display: block;        
-    }
 
     #main-title{
         text-align: center;
         color: #ff8c94;
     }
 
-    .skill-categories {
-        grid-template-columns: 1fr; 
-        width: 95%;
-        overflow: hidden;
-      }
 
-    .box {
-        background-color: #ffd3b5; 
-        border: 2px solid #ffaaa6;
-        border-radius: 4vw;
-        padding: 5.5%;
-        text-align: center; 
-        width: 100%;
-        overflow: hidden;
-        font-size: calc(2px + 2vw);
-    }
 }

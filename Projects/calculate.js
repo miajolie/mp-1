@@ -79,12 +79,12 @@ function power(){
     const secondIN = document.getElementById("second num input").value;
     const second= Number(secondIN);
 
-    const ans = 1 
+    let start = 1;
 
     //first ^second
 
-    for(const i = 1; i<=second; i++){
-        ans = first * ans
+    for(let i = 1; i <= second; i++){
+        start = first * start;
     }
 
     if(ans < 0){
@@ -93,7 +93,7 @@ function power(){
         document.getElementById("ans").style.color="black";
         
     }
-    document.getElementById("answer").innerHTML=ans;
+    document.getElementById("answer").innerHTML=start;
 }
 
 function clearNums(){
